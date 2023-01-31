@@ -1,6 +1,5 @@
 const fs = require('fs'); 
 const path = require('path'); 
-//const PdfReader = require('pdfreader').PdfReader;
 const downloadDir = './files' 
 const keywords = { 
    'administratif': ['impôt', 'facture'], 
@@ -50,8 +49,3 @@ fs.watchFile(downloadDir, {persistent: true,}, (curr, prev) =>{
    })                 
 });
 
-
-
-      //Loop over the file  
-//  } 
-// })
